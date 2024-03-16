@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #BD8072;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.graphics.pages.ListsPageFXML">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="700.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/bg3.png" />
+         </image>
+      </ImageView>
+      <StackPane fx:id="StackPaneBlackList" prefHeight="500.0" prefWidth="531.0" visible="false">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="324.0" layoutY="52.0" text="Black list">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="BlockViewList" layoutX="242.0" layoutY="79.0" prefHeight="370.0" prefWidth="253.0" style="-fx-background-color: cccccc;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <StackPane fx:id="StackPaneFollowings" prefHeight="500.0" prefWidth="506.0" visible="false">
+         <children>
+            <AnchorPane prefHeight="500.0" prefWidth="594.0">
+               <children>
+                  <Label layoutX="214.0" layoutY="41.0" prefHeight="35.0" prefWidth="135.0" text="FOLLOWINGS">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="22.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="FollowingViewList" layoutX="105.0" layoutY="89.0" prefHeight="359.0" prefWidth="318.0" style="-fx-background-color: cccccc;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <StackPane fx:id="StackPaneFollowers" prefHeight="500.0" prefWidth="515.0" visible="false">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="274.0" layoutY="48.0" prefHeight="35.0" prefWidth="151.0" text="FOLLOWERS">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="25.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="FollowerViewList" layoutX="221.0" layoutY="89.0" prefHeight="370.0" prefWidth="246.0" style="-fx-background-color: cccccc;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <StackPane fx:id="StackPaneLists" prefHeight="500.0" prefWidth="531.0">
+         <children>
+            <AnchorPane prefHeight="500.0" prefWidth="594.0">
+               <children>
+                  <Label layoutX="315.0" layoutY="44.0" prefHeight="35.0" prefWidth="70.0" text="LISTS">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="25.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="94.0" fitWidth="89.0" layoutX="306.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/followIcon.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="FollowButton" layoutX="236.0" layoutY="250.0" mnemonicParsing="false" onAction="#followers" text="Followers" textFill="#ff6600">
+                     <font>
+                        <Font name="Cambria Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="FollowingButton" layoutX="412.0" layoutY="250.0" mnemonicParsing="false" onAction="#followings" text="Followings" textFill="#ff6600">
+                     <font>
+                        <Font name="Cambria Italic" size="15.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="55.0" fitWidth="63.0" layoutX="64.0" layoutY="388.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/bL.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="BlackListButton" layoutX="137.0" layoutY="401.0" mnemonicParsing="false" onAction="#blackList" text="Black List" textFill="#ff6600">
+                     <font>
+                        <Font name="Cambria Italic" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </StackPane>
+      <AnchorPane layoutX="555.0" prefHeight="500.0" prefWidth="146.0">
+         <children>
+            <Button fx:id="BackButton" layoutX="47.0" layoutY="50.0" mnemonicParsing="false" onAction="#back" text="Go Back" textFill="#ff6600">
+               <font>
+                  <Font name="Cambria Bold Italic" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="MenuButton" layoutX="25.0" layoutY="424.0" mnemonicParsing="false" onAction="#menu" text="Main Menu" textFill="#ff6600">
+               <font>
+                  <Font name="Cambria Bold Italic" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

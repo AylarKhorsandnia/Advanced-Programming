@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: 0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.openjfx.graphics.pages.MainMenuFXML">
+   <children>
+      <ImageView fitHeight="478.0" fitWidth="453.0" layoutX="115.0" layoutY="16.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/hola.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" layoutY="-7.0" prefHeight="500.0" prefWidth="700.0">
+         <children>
+            <ImageView fitHeight="91.0" fitWidth="106.0" layoutX="63.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/menu.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="50.0" layoutX="543.0" layoutY="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/profile.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="64.0" fitWidth="50.0" layoutX="543.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/timeline.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="178.0" layoutY="47.0" prefHeight="34.0" prefWidth="133.0" text="Main menu">
+               <font>
+                  <Font name="Cambria Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="52.0" fitWidth="74.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/message.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="63.0" fitWidth="50.0" layoutX="7.0" layoutY="376.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/explorer.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ProfileButton" layoutX="433.0" layoutY="187.0" mnemonicParsing="false" onAction="#profile" prefHeight="34.0" prefWidth="94.0" text="Profile" textFill="#ff6600">
+               <font>
+                  <Font name="Cambria Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="MessagesButton" layoutX="83.0" layoutY="261.0" mnemonicParsing="false" onAction="#messages" prefHeight="34.0" prefWidth="94.0" text="Messages" textFill="#ff6600">
+               <font>
+                  <Font name="Cambria Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="TimeLineButton" layoutX="433.0" layoutY="307.0" mnemonicParsing="false" onAction="#timeLine" prefHeight="34.0" prefWidth="94.0" text="TimeLine" textFill="#ff6600">
+               <font>
+                  <Font name="Cambria Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="LogOutButton" layoutX="433.0" layoutY="442.0" mnemonicParsing="false" onAction="#logout" prefHeight="34.0" prefWidth="94.0" text="Log Out" textFill="#ff6600">
+               <font>
+                  <Font name="Cambria Italic" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="ExploreButton" layoutX="83.0" layoutY="383.0" mnemonicParsing="false" onAction="#explorer" prefHeight="34.0" prefWidth="94.0" text="Explorer" textFill="#ff6600">
+               <font>
+                  <Font name="Cambria Italic" size="15.0" />
+               </font>
+            </Button>
+            <Label fx:id="UsernameLabel" layoutX="447.0" layoutY="89.0" prefHeight="27.0" prefWidth="94.0" textFill="#666666">
+               <font>
+                  <Font name="Cambria Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="123.0" fitWidth="103.0" layoutX="542.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/frame1.png" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="520.0" layoutY="3.0" prefHeight="159.0" prefWidth="160.0">
+               <children>
+                  <ImageView fx:id="imgProfile1" fitHeight="98.0" fitWidth="64.0" layoutX="42.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true" />
+               </children></AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
